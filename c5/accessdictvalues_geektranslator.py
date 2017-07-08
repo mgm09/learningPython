@@ -20,6 +20,7 @@ while choice != 0:
         2 - Add a geek term
         3 - Redefine a geek term
         4 - Delete a geek term
+        5 - list all items in translator
         """
     )
 
@@ -67,6 +68,10 @@ while choice != 0:
             print("\nOkay, I deleted", term)
         else:
             print("\nI can't do that!", term, "doesn't exist in the dictionary.")
+
+    # list all values in the dictionary
+    elif choice == "5":
+        print(geek.items())
 
     # some unknown choice
     else:
