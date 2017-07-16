@@ -4,14 +4,12 @@
 import random
 
 random_list = []
-
-WORDS = ("OVERUSED", "CLAM", "GUAM", "TAFFETA", "PYTHON")
-
-print("\nOriginal list of words: ", WORDS)
+WORDS = ["Smooth","Run","Little","Dady","Hunter","Pog","Art","Question"]
+print("\n\nOriginal list of words:", WORDS)
 
 while WORDS:
-    word = random.choice(WORDS)
-    random_list.append(word)
-    WORDS.remove(word)
+   word = random.choice(WORDS)
+   random_list.append(word)
+   WORDS.remove(word)
 
 print("\n", random_list)
